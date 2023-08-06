@@ -1,0 +1,101 @@
+/* MAIN */
+.mainContainer {
+  position: relative;
+}
+.mainContainer:after {
+  content: "";
+  display: block;
+  padding-bottom: 40%;
+}
+
+.polaroidFrame {
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 0;
+}
+.polaroidFrame:after {
+  content: "";
+  display: block;
+}
+.flex-rectangle {
+  height: 100%;
+}
+
+.flex-rectangle:before {
+  content: "";
+  display: block;
+}
+
+figure {
+  background: #ffffff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  top:-50px;
+  right:0;
+}
+figure:after {
+  content: "";
+  display: block;
+}
+figcaption {
+  color: #292929;
+  font-size: 1.5vw;
+  position: relative;
+  top: 15px;
+  font-family: 'Euphemia UCAS Regular', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+figcaption:after {
+  content: "";
+  display: block;
+}
+
+figcaption ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* NAVIGATION */
+.navBar {
+  padding-top: 3%;
+}
+
+.navBar a, .navBar span {
+  font-family: 'Euphemia UCAS Regular', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-underline-offset: none;
+  text-decoration: none;
+  color: #292929;
+}
+.navBar span {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.navBar a:hover, .navBar span:hover {
+  color: #429B6B;
+  cursor: pointer;
+}
+
+/* FONT-FACE */
+@font-face {
+  font-family: "Euphemia UCAS Regular";
+  src: url('../fonts/Euphemia UCAS Regular 2.6.6.ttf');
+}
